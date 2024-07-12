@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+    <input name="text" id="num1">
+    <input name="text" id="num2">
+    <button type="button" id="add" onclick="addition()">+</button>
+    <button type="button" id="add" onclick="addition()">-</button>
+    <button type="button" id="add" onclick="addition()">*</button>
+    <button type="button" id="add" onclick="addition()">/</button>
+    <script>
+      let a,b,c;
+      a=10;b=20;c=30;
+        if(a>b&&b>c){
+            console.log("a is greater than b");
+        
+        }
+        else if(b>a&&c>b){
+            console.log("b is greater than a");
+
+        }
+        else{
+            console.log("c is greater than b")
+
+        }
+        function addition(){
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            alert(a+b);
+
+        }
+    
+        function subtraction(){
+        let a=parseInt(document.getElementById("num1").value);
+        let b=parseInt(document.getElementById("num2").value);
+        alert(a-b);
+
+        }
+        function division(){
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            alert(a/b);
+
+        }
+       
+        function multiplication(){
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            alert(a*b);
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>

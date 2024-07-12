@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(20, 208, 208);
+        }
+        header .logo-sec img{
+            width: 200px;
+        }
+        header .menu-sec nav > ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+        header .menu-sec nav{
+           height: 100%;            
+        }
+        header .menu-sec nav > ul >li{
+            display: inline-block;
+            position: relative;
+            height: 100%;
+        }
+        header .menu-sec nav > ul > li > a{
+            font-size: 20px;
+            
+        }
+        header .menu-sec{
+            display: flex;
+            align-content: center;
+            flex-wrap:wrap;
+        }
+        header .menu-sec nav > ul > li > ul.submenu{
+            position: absolute;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            top: 40px;
+            left: 10px;
+            width: 100px;
+            background: rgb(209, 157, 28);
+            display: none;
+        }
+        header .menu-sec nav > ul > li > ul.submenu li{
+            padding: 10px 5px;
+            margin-bottom: 10px;
+        }
+        header .menu-sec nav > ul > li.menu-item:hover .submenu{
+            display: block;
+        }
+    </style>
+<body>
+    <header>
+        <div class="logo-sec">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmoerA4tqsOA8e9jUR_v_eAhg2Lg-QsvkvA&s" alt="">
+    
+        </div>
+        <div class="menu-sec">
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="#">office</a></li>
+                    <li class="menu-item"><a href="#">coach</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">bowling</a>></li>
+                            <li class="submenu-item"><a href="#">batting</a>></li>
+                            <li class="submenu-item"><a href="#">fielding</a>></li>
+
+                        </ul>
+                    </li>
+    
+                    <li class="menu-item"><a href="#">contact</a></li>
+                     
+    
+    
+    
+                </ul>
+            </nav>
+    
+        </div>
+
+    
+</body>
+</html>

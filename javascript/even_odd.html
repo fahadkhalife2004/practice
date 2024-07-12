@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+   <table border="1px" id="output">
+   </table>
+    <script>
+        let arr=[];
+        let x=0;
+        data=""
+        for(let i=1;i<=20;i++){
+            data+="<tr>";               
+            if(i%2==0){
+                data+="<td>"+(i)+"</td>";
+                console.log(i);
+                arr[x]=i;
+                x++;
+            }
+            data+="</tr>";
+        }
+        console.log(arr);
+        document.getElementById("result").innerHTML=data;
+
+
+        let arr2=[];
+        let y=0;
+        data=""
+        for(let j=1;j<=20;j++){
+            data+="<tr>";
+            if(j%2!=0){
+                data+="<td>"+(j)+"</td>";
+                console.log(j);
+                arr[y]=j;
+                y++;
+            }
+            data+="</tr>";
+        }
+        console.log(arr);
+        document.getElementById("result").innerHTML=data;
+
+          
+    </script>
+   </table> 
+   </body>
+</html>

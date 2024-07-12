@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(76, 80, 218);
+    .logo-sec{          
+        img{
+            width: 100px;
+            border-radius: 20px;
+        }
+    }
+    .menu-sec{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        ul{
+            list-style-type: none;
+            li{
+                color: white;
+                display: inline;
+                padding: 15px;
+            
+            }
+            :hover{
+                color: gold;
+            }
+        }
+        .image-sec{
+            img{
+                width: 450px;
+            }
+            P{
+                font-size: 25px;
+                margin-bottom: 20px ;
+                display: flex;
+                word-wrap: normal
+            }
+
+        }
+    }
+}

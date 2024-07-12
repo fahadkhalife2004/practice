@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       name:<input type="text" name=" " id="name"><br>
+       history:<input type="text" name="subject" id="subject1"><br>
+       maths  :<input type="text" name="subject" id="subject2"><br>
+       science:<input type="text" name="subject" id="subject3"><br>
+
+        <button id="submit" onclick="calculate()">submit</button>
+        <h1 id="result"></h1>
+
+        <script>
+         function calculate(){
+            let result=[];
+            let name= document.getElementById("name").value;
+            let subject1=parseInt(document.getElementById("subject1").value);
+            let subject2=parseInt(document.getElementById("subject2").value);
+            let subject3=parseInt(document.getElementById("subject3").value);
+            
+            let total=(subject1+subject2+subject3);
+            let avg=total/3
+            let arr=[];
+            arr[0]=name;
+            arr[1]=subject1;
+            arr[2]=subject2;
+            arr[3]=subject3;
+            console.log(arr);
+            
+            document.getElementById("result").innerHTML="total:"+total+"<br>"+"avg:"+avg;
+         } 
+        
+        </script>
+    </body>
+</html>

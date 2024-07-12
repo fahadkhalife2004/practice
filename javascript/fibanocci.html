@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        fibanocci:<input type="text" name=" " id="fibanocci">
+        <input type="button" value="submit" onclick="fibanocci()">
+        <h1 id="result"></h1>
+        <table border="1px" id="output"></table>
+        <script>
+         function fibanocci(){
+            let a=0; b=1; no=8
+            let data="";
+        
+            let fibanocci=parseInt(document.getElementById("fibanocci").value);
+            while(no>0){
+                data+="<tr>";
+                let c=a+b;
+                data+="<td>"+(c)+"</td>";
+                console.log(c);
+                a=b;
+                b=c;
+                no--;
+                data+="</tr>"
+            }
+            
+            document.getElementById("output").innerHTML=data;
+        }
+            
+        </script>
+    </body>
+</html>

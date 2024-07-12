@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        print number <input type="text" name="" id="result">
+        <input id="val" type="button" value="submit" onclick="reverse()">
+        <table border="1px" id="output" style="column-count: '10'"></table>
+        <script>
+            result=""
+            function reverse(){
+                let data="";
+                let backword=parseInt(document.getElementById("result").value);
+                for(i=backword;i>=0;i--){
+                data+="<tr>";
+                data+="<td>"+(i)+"</td>";
+                console.log(i); 
+                }
+                data+="</tr>";
+                document.getElementById("output").innerHTML=data;
+            }
+
+            </script>
+    </body>
+</html>

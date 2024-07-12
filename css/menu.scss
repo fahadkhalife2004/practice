@@ -1,0 +1,11 @@
+.menu{
+    ul{
+        float: right;
+    }
+    li{
+        display: flex;
+        list-style: none;
+        padding: 0px 2px 2px 3px;
+        font-size: 20px;
+    }
+}

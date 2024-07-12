@@ -1,0 +1,49 @@
+.head{
+  padding: 15px 0px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  .logo{
+        width: 250px;
+        display: flex;
+    }
+  img{
+     width: 100%;
+    }
+  .menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+    }
+  ul{
+        float: right;
+        display: flex;
+   }
+    li{
+        list-style: none;
+        display: inline;
+        padding: 0px 30px 0px 0px;
+        font-size: 20px;
+        text-decoration: none;
+        color: royalblue;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(112, 139, 58);
+        }
+    }
+    .container{
+        .row{
+        .class{
+            img{
+                width: 100%;
+            }
+        }
+        }
+       
+    }
+}

@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        enter your marks <input type="text" name="" id="score">
+       <input type="button" value="submit" onclick="marks()">
+        <script>
+         function marks(){
+            letscore=89;
+            let score=parseInt(document.getElementById("score").value);
+            if(score>=90 && score<=100)
+            {
+             console.log(score+"A Grade");
+            }
+            else if(score>=70 && score<=79)
+            {
+             console.log(score+"B Grade");
+            }
+             else if(score>=60 && score<=69)
+            {
+             console.log(score+("C Grade"));
+            }
+            else if(score>=50 && score<=59)
+            {
+             console.log(score+("D Grade"))
+            }
+            else{
+             console.log("fail");
+            }
+            
+
+        }
+        </script>
+    </body>
+</html>

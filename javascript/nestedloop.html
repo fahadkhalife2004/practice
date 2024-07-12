@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table tr td{
+        padding: 15px;
+    }
+</style>
+<body>
+  <table border="1px" id="result">
+    
+    </table>
+    <script>
+    let i=1;j=1;
+        let data="";
+     for(i=1;i<=20;i+=10){
+         data +="<tr>"
+            let c=i;
+
+            
+           for(j=1;j<=20;j++){
+                if(j==1){
+                    data+="<td>"+(i)+"</td>"
+                    
+                }
+                c=(c+10);
+                data+="<td>"+(c)+"</td>"
+            }
+
+
+
+            data+="</tr>"
+        }
+        document.getElementById("result").innerHTML=data;
+    </script>
+</body>
+</html>

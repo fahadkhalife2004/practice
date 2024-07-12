@@ -1,0 +1,36 @@
+.main-sec {
+    &>.child-sec {
+        float: left;
+        width: 33.3333%;
+
+        .inner-child-sec {
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+
+            &:hover {
+                .overlay {
+                    top: 30px;
+                }
+            }
+
+            &>.overlay {
+                transition: all 1s ease-in-out;
+                position: absolute;
+                width: 150%;
+                height: 200%;
+                background-color: #0000007a;
+                top: -100%;
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+        img {
+            width: 120%;
+            height: 200px;
+        }
+    }
+}

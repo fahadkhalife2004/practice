@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        table{
+            font-size: 20px;
+        }
+    </style>
+    <body>         
+        name:<input type="text" name="" id="name"><br>
+        python:<input type="text"name="" id="subject1"><br>
+        java:<input type="text" name="" id="subject2"><br>
+        web :<input type="text" name=""id="subject3"><br>
+        <!-- <button id="submit" onclick="calculate()">submit</button> -->
+        <input type="button" value="submit" id="btn" onclick="calculate()">
+        <h3 id="result"></h3>
+        <table  id="result2" border="1px"></table>
+        <script>
+            var no=1;
+            function calculate(){
+                let arr=[];
+                let name=document.getElementById("name").value
+                let python=parseInt(document.getElementById("subject1").value);
+                let java=parseInt(document.getElementById("subject2").value);
+                let web=parseInt(document.getElementById("subject3").value);
+                
+            
+                let total=(python+java+web);
+                let avg=total/3;
+                arr[0]=name;
+                arr[1]=python;
+                arr[2]=java;
+                arr[3]=web;
+                arr[4]=total;
+                arr[5]=avg;
+                //console.log(no-1);
+                //outer_arr[no-1]=arr;
+                //console.log(out_arr);
+                
+                document.getElementById("result").innerHTML="Total:"+total+"<br> Average:"+avg;
+
+
+                let tbl_data="";
+                
+                //console.log("no:"+no);
+                if(no==1){
+                tbl_data+="<tr>";
+                    tbl_data+="<td>name</td>";
+                    tbl_data+="<td>python</td>";
+                    tbl_data+="<td>java</td>";
+                    tbl_data+="<td>web</td>";
+                    tbl_data+="<td>total</td>";
+                    tbl_data+="<td>avg</td>";
+                tbl_data+="</tr>";
+                }
+                
+                
+                tbl_data+="<tr>";
+                    for(let i=0;i<arr.length;i++){
+                        tbl_data+="<td>"+arr[i]+"</td>";
+                    }
+                
+                tbl_data+="</tr>";
+
+                
+                document.getElementById("result2").innerHTML=tbl_data;
+                no++;
+            }
+        </script>
+    </body>
+</html>

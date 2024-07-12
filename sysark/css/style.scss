@@ -1,0 +1,222 @@
+.header{
+    background: antiquewhite;
+
+}
+.digital-transformation{
+    .text-wrapper{
+        display: flex;
+         height: 100%;
+         flex-direction: column;
+         justify-content: center;
+        h1{
+            color: black;
+            .color-1{
+                color: #E77E36;
+            }
+            .color-2{
+                color: #493480;
+
+            }            
+            
+        }
+    }   
+}
+
+.industrial-automation{
+    .title-sec{
+        h1{
+            text-align: center;
+        }
+    }
+    .img-sec{
+        img{
+            width: 100%;
+        }
+    }
+    .logo-sec{
+        img{
+            width: 58px;
+        }
+    }
+    .inner-sec{
+        display: flex;
+        background-color: #dbdbdb;
+        padding: 20px;
+        column-gap: 20px;
+        .text-sec{
+            ul{
+                padding-left:20px;
+            }
+            .know-more-sec{
+                a{
+                    color: #E77E36;
+                }
+            }
+            
+        }
+    }
+   
+    .menu-image{
+        img{
+            width: 100%;
+        }
+    }
+    .inner-logo{
+        display: flex;
+        background-color: #dbdbdb;
+        padding: 15px;
+        column-gap: 20px;
+        .logo-box{
+            img{
+                width: 58px;
+            }
+        }
+        .list-sec{
+            ul{
+                padding-left: 20px;
+            }
+            .know-more-sec{
+                a{
+                    color:  #E77E36; ;
+                }
+            }
+        }
+    }
+}    
+.robotics{
+    .new-image{
+        img{
+            width: 100%; 
+        }
+    }
+}
+.robo-logo{
+        display: flex;
+        background-color: #dbdbdb;;
+        padding: 20px;
+        column-gap: 31px;
+        height: 240px;
+    }
+    .new-logo{
+        img{
+            width: 58px;
+        }
+    }
+    .robo-list{
+        ul{
+            padding-left: 28px;
+        }
+        .more-info{
+            a{
+                color: #E77E36;
+            }
+        }
+    }
+    .resource-image{ 
+        
+        img{
+            width: 100%;
+        }
+    }
+ 
+    .source-logo{
+        padding: 30px;
+        display: flex;
+        background-color: #dbdbdb;
+        column-gap: 31px;
+    }
+    .source-pic{
+        img{
+            width: 50px;
+        }
+    }
+    .heding-sec{
+      h1{
+         color: #1C1C1C;
+        }
+    } 
+     .new-info{
+        a{
+         color: #E77E36;
+
+        }
+    }
+   .head-logo{
+     background: #120C24;
+   }
+    .head-wrapper{
+        h1{
+            color: #E77E36;
+            text-align: center;
+        }
+    }
+    .content-sec{
+        text-align: center;
+        p{
+            max-width: 800px;
+            color: #F5F5F5;
+            margin: 0 auto;
+        }
+    }    
+    .ai-ml{
+        display: flex;
+        padding: 20px;
+        column-gap: 20px;
+    }
+    .heading-icon{
+        h1{
+            color: #FFFFFF;
+        }
+    }
+    .computing-items{
+        display: flex;
+        padding: 28px;
+        column-gap: 25px;
+    }
+    .text-icon{
+        color: #ffffff;
+    }
+    .chain-image{
+        display: flex;
+        padding: 28px;
+        column-gap: 20px;
+    }
+    .text1-icon{
+        h2{
+            color: #ffffff;
+        }
+    }
+    .arguementation{
+        display: flex;
+        padding: 28px;
+        column-gap: 20px;
+    }
+    .text2-icon{
+        h4{
+            color: #ffffff;
+        }
+    }
+    .computated{
+        display: flex;
+        padding: 27px;
+        column-gap: 20px;
+    }
+    .text3-icon{
+        h3{
+            color: #ffffff;
+        }
+    }
+    .cloud-computing{
+        display: flex;
+        padding: 27px;
+        column-gap: 25px;
+    }
+    .text4-icon{
+        h4{
+            color: #ffffff;
+        }
+    }
+    .buisness{
+        background: #FFFFFF80;
+    }
+    

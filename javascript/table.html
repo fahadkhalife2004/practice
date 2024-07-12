@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        enter a number:<input type="text" name="" id="input">
+        <button type="button" value="click" onclick="table()">submit</button>
+        <table border="1px" id="result"></table>
+        <script>
+        function table(){
+           let a=1,b=10
+           let table=parseInt(document.getElementById("result").value);
+           let data="";
+           let input = document.getElementById('input').value;
+           for(i=1;i<=input;i++){
+                data+="<td>";
+                for(j=1;j<=10;j++){
+                    data += "<td>" + i + " * " + j + " = " + (i * j) + "</td>";
+                }
+                data+="</tr>";
+           }
+           document.getElementById("result").innerHTML=data;
+        }
+        </script>
+    </body>
+</html>

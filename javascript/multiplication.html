@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       enter a number <input type="text" name="" id="multiplication">
+       <button type="button" value="click" onclick="table()">submit</button>
+       <ul id="output">
+        <li></li>
+       </ul>
+        <script>
+            let i,data=""
+            function table()
+            {
+            let num=parseInt(document.getElementById("multiplication").value);
+            for(i=1;i<=10;i++)
+            {
+            data+="<li>"+num+"*"+i+"="+num*i+"</li>"
+            }
+            document.getElementById("output").innerHTML=data; 
+        } 
+         </script>
+    </body>
+</html>

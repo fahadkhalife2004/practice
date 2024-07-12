@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        number 1<input type="text" name="" id="txt1"><br>
+        number 2<input type="text" name="" id="txt2"><br>
+        <input type="button" value="+" onclick="add(this.value)">
+        <input type="button" value="-" onclick="add(this.value)">
+        <input type="button" value="*" onclick="add(this.value)">
+        <input type="button" value="%" onclick="add(this.value)">
+        <h1 id="res"></h1>
+
+       <script>
+        function add(param)
+        {
+            let a=parseInt(document.getElementById("txt1").value);
+            let b=parseInt(document.getElementById("txt2").value);
+            switch(param){
+                case "+":
+                document.getElementById("res").innerHTML=a+b;
+                break;
+                case "-":
+                document.getElementById("res").innerHTML=a-b;
+                break;
+                case "*":
+                document.getElementById("res").innerHTML=a*b;
+                break;
+                case "%":
+                document.getElementById("res").innerHTML=a%b;
+                break;
+            }
+        }
+       </script>
+    </body>
+</html>
